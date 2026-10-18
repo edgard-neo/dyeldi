@@ -1,0 +1,10 @@
+[package]
+name = "security-scanner"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dyeldi Security Team"]
+description = "Auditor de credenciais, segredos e vazamentos para o repositório Dyeldi antes de publicar no GitHub"
+
+[dependencies]
+# Zero dependências externas: usa apenas a biblioteca padrão (std) de Rust
+# para máxima portabilidade, segurança e compilação instantânea.

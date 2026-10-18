@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      (function() {
+        var isCrossOriginError = function(err) {
+          var str = String((err && (err.message || err.reason || err.error)) || err || '');
+          return str.indexOf('$$typeof') !== -1 ||
+                 str.indexOf('SecurityError') !== -1 ||
+                 str.indexOf('Blocked a frame') !== -1 ||
+                 str.indexOf('cross-origin') !== -1;
+        };
+
+        window.onerror = function(msg, url, line, col, error) {
+          if (isCrossOriginError(msg) || isCrossOriginError(error)) {
+            return true;
+          }
+        };
+
+        window.addEventListener('error', function(event) {
+          if (isCrossOriginError(event.message) || isCrossOriginError(event.error) || isCrossOriginError(event)) {
+            event.preventDefault();
+            event.stopPropagation();
+            return true;
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(event) {
+          if (isCrossOriginError(event.reason) || isCrossOriginError(event)) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+        }, true);
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dyeldi — Gestão de Ações, FIIs &amp; Criptoativos</title>
+
+    <meta
+      name="description"
+      content="Gerencie sua carteira de Ações, FIIs e Criptomoedas com rebalanceamento inteligente, projeção de dividendos e cotações em tempo real."
+    />
+    <meta
+      name="keywords"
+      content="investimentos, B3, ações, FIIs, criptomoedas, bitcoin, ethereum, calculadora de dividendos, rebalanceamento de carteira, bolsa de valores, renda passiva"
+    />
+    <meta name="author" content="Dyeldi App" />
+    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="1E4NOiEuWvgSQMLGPl4Pf-NzhfNs8916fqRmFta5pUk" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://dyeldi.site/" id="canonical-url" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dyeldi.site/" />
+    <meta
+      property="og:title"
+      content="Dyeldi — Gestão de Ações, FIIs &amp; Criptoativos"
+    />
+    <meta
+      property="og:description"
+      content="Gerencie sua carteira de Ações, FIIs e Criptomoedas com rebalanceamento inteligente, projeção de dividendos e cotações em tempo real."
+    />
+    <meta property="og:image" content="https://dyeldi.site/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Dyeldi" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://dyeldi.site/" />
+    <meta
+      name="twitter:title"
+      content="Dyeldi — Gestão de Ações, FIIs &amp; Criptoativos"
+    />
+    <meta
+      name="twitter:description"
+      content="Gerencie sua carteira de Ações, FIIs e Criptomoedas com rebalanceamento inteligente, projeção de dividendos e cotações em tempo real."
+    />
+    <meta name="twitter:image" content="https://dyeldi.site/og-image.png" />
+
+    <!-- Favicon, Apple Touch Icon & PWA Manifest -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- iOS / Safari PWA Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Dyeldi" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="Dyeldi" />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "@id": "https://dyeldi.site/#webapp",
+            "url": "https://dyeldi.site/",
+            "name": "Dyeldi",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "All",
+            "browserRequirements": "Requires JavaScript",
+            "inLanguage": "pt-BR",
+            "description": "Calculadora de investimentos, gestão de carteira, rebalanceamento por dividend yield e análise de ações e FIIs da B3.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "BRL"
+            }
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://dyeldi.site/#organization",
+            "name": "Dyeldi",
+            "url": "https://dyeldi.site/",
+            "logo": "https://dyeldi.site/favicon.svg"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Fonts & API Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://brapi.dev" />
+    <link rel="dns-prefetch" href="https://api.coingecko.com" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+  </head>
+
+  <body class="h-full antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

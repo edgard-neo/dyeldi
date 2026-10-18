@@ -1,0 +1,212 @@
+{
+  "app": {
+    "name": "Dyeldi",
+    "tagline": "Gestão de Ações, FIIs e Dividendos",
+    "loading": "Carregando plataforma..."
+  },
+  "nav": {
+    "overview": "Visão geral",
+    "transactions": "Lançamentos",
+    "positions": "Carteira",
+    "rebalance": "Rebalancear",
+    "dividends": "Dividendos",
+    "diagnosis": "Diagnóstico",
+    "simulator": "Simulador",
+    "profile": "Perfil",
+    "settings": "Configurações",
+    "sections": {
+      "analysis": "Análise",
+      "account": "Conta"
+    },
+    "support_whatsapp": "Suporte WhatsApp",
+    "collapse_sidebar": "Recolher menu lateral",
+    "expand_sidebar": "Expandir menu lateral"
+  },
+  "header": {
+    "launch_button": "Novo Lançamento",
+    "launch_tooltip": "Registrar nova compra, venda ou provento",
+    "notifications_tooltip": "Avisos e Notificações",
+    "profile": "Meu Perfil",
+    "demo_badge": "Demo",
+    "demo_tooltip": "Modo Demonstração — Conecte sua conta para salvar seus dados",
+    "enter": "Entrar"
+  },
+  "demo": {
+    "title": "Modo Demonstração Ativo",
+    "message": "Para <1>{{action}}</1>, crie sua conta gratuita. O modo de demonstração serve apenas para você navegar e conhecer a plataforma com dados de exemplo.",
+    "not_now": "Continuar navegando",
+    "create_account": "Criar Conta Gratuita"
+  },
+  "auth": {
+    "title": "Acesse sua conta",
+    "subtitle": "Conecte sua conta Google para sincronizar e proteger sua carteira em nuvem com segurança.",
+    "google_button": "Entrar com o Google",
+    "google_loading": "Conectando com o Google...",
+    "demo_title": "Acessar Modo Demonstração",
+    "demo_loading": "Carregando demo...",
+    "features": {
+      "security": "Segurança com criptografia de ponta",
+      "privacy": "Privacidade absoluta de dados financeiros",
+      "sync": "Sincronização instantânea entre dispositivos"
+    },
+    "errors": {
+      "popup_closed": "A autenticação foi cancelada. Tente novamente.",
+      "network": "Falha de conexão. Verifique sua internet.",
+      "popup_blocked": "O navegador bloqueou o popup. Permita popups para continuar.",
+      "default": "Não foi possível autenticar. Tente novamente."
+    }
+  },
+  "settings_view": {
+    "title": "Configurações da Plataforma",
+    "subtitle": "Personalize a aparência, gerencie alertas e exporte relatórios dos seus investimentos.",
+    "theme_title": "Tema da Interface",
+    "theme_desc": "Alterne entre os modos claro e escuro para melhor conforto visual.",
+    "notifications_title": "Alertas de Preço Teto & Proventos",
+    "notifications_desc": "Receba avisos instantâneos quando um ativo atingir margem de segurança segundo a fórmula de Bazin ou pagar dividendos.",
+    "notifications_badge": "Notificações no Navegador",
+    "notifications_btn": "Configurar Alertas",
+    "data_title": "Baixar dados da carteira",
+    "data_desc": "Exporte o histórico de compras e posições em planilha para guardar ou abrir no Excel.",
+    "csv_btn": "Exportar planilha (CSV)",
+    "json_btn": "Exportar arquivo de segurança (JSON)",
+    "refresh_quotes_btn": "Recarregar Cotações B3",
+    "refreshing_quotes": "Atualizando...",
+    "success_json": "Cópia de segurança baixada com sucesso!",
+    "success_csv": "Relatório de lançamentos exportado com sucesso!",
+    "error_no_transactions": "Você ainda não possui lançamentos registrados para exportar."
+  },
+  "profile_view": {
+    "member_badge": "Investidor Dyeldi",
+    "connected": "Conectado com segurança",
+    "demo_mode": "Modo Demonstração",
+    "guest_investor": "Investidor Convidado",
+    "default_investor": "Investidor",
+    "guest_email": "demo@example.com",
+    "unauthenticated": "Não conectado",
+    "stats": "Resumo da Conta",
+    "total_assets": "Patrimônio Total",
+    "positions_count": "Ativos na Carteira",
+    "transactions_count": "Lançamentos Registrados",
+    "positions_unit": "ativos",
+    "transactions_unit": "lançamentos",
+    "save_google_btn": "Salvar com Google",
+    "logout_btn": "Sair da conta",
+    "support_badge": "Apoie o Projeto Dyeldi",
+    "support_title": "Gosta do Dyeldi? Apoie o desenvolvimento independente!",
+    "support_desc": "O Dyeldi é mantido sem mensalidades fixas nem anúncios. Se a plataforma agrega valor aos seus investimentos na B3, considere fazer uma contribuição voluntária de qualquer valor via Pix.",
+    "support_btn": "Apoiar com Pix"
+  },
+  "titles": {
+    "overview": {
+      "title": "Visão Geral",
+      "subtitle": "Resumo e indicadores da sua carteira"
+    },
+    "positions": {
+      "title": "Carteira",
+      "subtitle": "Custódia, preço médio, valuation e retorno total"
+    },
+    "rebalance": {
+      "title": "Rebalanceamento",
+      "subtitle": "Calculadora inteligente de aportes ótimos"
+    },
+    "dividends": {
+      "title": "Dividendos",
+      "subtitle": "Renda passiva, proventos e efeito bola de neve"
+    },
+    "transactions": {
+      "title": "Lançamentos",
+      "subtitle": "Histórico auditável de ordens e lançamentos"
+    },
+    "diagnosis": {
+      "title": "Diagnóstico",
+      "subtitle": "Score de risco e saúde patrimonial"
+    },
+    "simulator": {
+      "title": "Simulador",
+      "subtitle": "Projeções de juros compostos vs CDI e IPCA"
+    },
+    "profile": {
+      "title": "Meu Perfil",
+      "subtitle": "Informações da conta e plano Dyeldi"
+    },
+    "settings": {
+      "title": "Configurações",
+      "subtitle": "Preferências, alertas e exportação de relatórios"
+    }
+  },
+  "common": {
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "close": "Fechar",
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "search": "Pesquisar..."
+  },
+  "footer": {
+    "quick_nav": "Navegação Rápida",
+    "overview": "Visão Geral",
+    "positions": "Carteira",
+    "rebalance": "Rebalancear",
+    "diagnosis": "Diagnóstico",
+    "simulator": "Simulador",
+    "whatsapp": "WhatsApp",
+    "whatsapp_title": "WhatsApp de Suporte",
+    "linkedin_title": "LinkedIn do Desenvolvedor",
+    "github_title": "GitHub do Desenvolvedor",
+    "copyright": "© {{year}} Dyeldi • Gestão de Ações, FIIs e Dividendos.",
+    "disclaimer": "Gestão inteligente de Ações, FIIs e Proventos. Fins educativos e organizacionais."
+  },
+  "summary": {
+    "projected_result": "Resultado Projetado ({{years}} {{unit}})",
+    "year_single": "Ano",
+    "year_plural": "Anos",
+    "multiplier_title": "Multiplicação de <1>{{multiplier}}x</1> sobre o capital investido",
+    "above_cdi": "+{{amount}} acima do CDI Líquido",
+    "final_wealth": "Patrimônio Final",
+    "final_wealth_tooltip_title": "Patrimônio Acumulado",
+    "final_wealth_tooltip_desc": "Montante total acumulado somando todo o saldo investido, valorização e dividendos reinvestidos.",
+    "purchasing_power": "Poder de compra real:",
+    "monthly_income": "Renda Passiva Mensal",
+    "monthly_income_tooltip_title": "Renda Mensal de Dividendos",
+    "monthly_income_tooltip_desc": "Média mensal de dividendos e rendimentos no último ano da projeção.",
+    "per_month": "/mês",
+    "annual_label": "Anual:",
+    "per_year": "/ano",
+    "total_invested": "Total do seu Bolso",
+    "total_invested_tooltip_title": "Total Investido",
+    "total_invested_tooltip_desc": "A soma de todo o dinheiro que saiu do seu bolso (aporte inicial + aportes mensais).",
+    "invested_percent": "Representa {{percent}}% do patrimônio",
+    "gains_title": "Lucro & Dividendos",
+    "gains_tooltip_title": "Ganhos dos Juros Compostos",
+    "gains_tooltip_desc": "Montante gerado puramente pelo retorno dos ativos e reinvestimento dos dividendos.",
+    "accumulated_dividends": "Dividendos acumulados:",
+    "effort_label": "Seu Esforço (Aportes):",
+    "working_money_label": "Dinheiro Trabalhando (Juros/Dividendos):",
+    "snowball_tag": "Efeito Bola de Neve:",
+    "snowball_desc": "No <1>Ano {{year}}</1>, seus dividendos mensais já pagam o valor do seu aporte mensal sozinho!"
+  },
+  "modals": {
+    "notifications": {
+      "title": "Alertas & Notificações",
+      "subtitle": "Receba avisos de dividendos e oportunidades de aporte",
+      "tip": "Configure abaixo os alertas de preço e preferências de aviso no seu navegador.",
+      "opportunities_identified": "{{count}} Oportunidades Identificadas",
+      "live_badge": "Ao Vivo",
+      "fcm_status_active": "Notificações Ativas",
+      "fcm_status_inactive": "Notificações Desativadas",
+      "enable_btn": "Ativar Notificações no Navegador",
+      "test_btn": "Testar Notificação Agora",
+      "threshold_label": "Margem Mínima de Segurança (Bazin):",
+      "close_btn": "Fechar"
+    },
+    "delete_transaction": {
+      "title": "Excluir este lançamento?",
+      "desc": "Seu preço médio e posições serão recalculados automaticamente.",
+      "confirm_btn": "Sim, excluir lançamento",
+      "cancel_btn": "Cancelar"
+    }
+  }
+}

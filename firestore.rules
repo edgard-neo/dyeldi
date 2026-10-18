@@ -1,0 +1,81 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+
+      match /{document=**} {
+        allow read, write: if isOwner(userId);
+      }
+    }
+
+    match /dividendos_cache/{ticker} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /technical_indicators_cache/{ticker} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /ativosInfo/{ticker} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /cotacoes_cache/{ticker} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /historico_cache/{cacheKey} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /brapi_daily_calls/{date} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /sync_meta/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /bolsai_daily_calls/{date} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /analise_carteira_cache/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /diagnostic_usage/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /test/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    match /locks/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}

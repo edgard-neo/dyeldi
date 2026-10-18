@@ -1,0 +1,79 @@
+# ==============================================================================
+# REGRAS DE SEGURANÇA E ARQUIVOS IGNORADOS - DYELDI OPEN SOURCE
+# Garante que nenhum segredo, chave de API, email ou credencial vaze no GitHub
+# ==============================================================================
+
+# 1. Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# 2. Builds e outputs
+dist/
+dist-ssr/
+build/
+coverage/
+*.local
+
+# 3. Logs de execução e depuração
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun.log*
+firestore-debug.log
+ui-debug.log
+
+# 4. Variáveis de ambiente & Credenciais secretas (CRÍTICO)
+.env
+.env*.local
+.env.production
+.env.staging
+.env.test
+!.env.example
+
+# 5. Credenciais do Firebase e Chaves de Contas de Serviço (CRÍTICO)
+firebase-applet-config.json
+serviceAccountKey*.json
+firebase-adminsdk*.json
+*-firebase-adminsdk-*.json
+.firebase/
+
+# 6. Chaves privadas, certificados e segredos criptográficos (CRÍTICO)
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pkcs12
+id_rsa*
+*.keystore
+
+# 7. Ferramentas Rust & Artefatos de compilação
+target/
+**/*.rs.bk
+Cargo.lock.bak
+
+# 8. Configurações de IDE e Editores locais
+.agents/
+.aws/
+.codex/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# 9. Arquivos temporários do Sistema Operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

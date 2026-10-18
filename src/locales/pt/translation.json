@@ -1,0 +1,148 @@
+{
+  "app": {
+    "name": "Dyeldi",
+    "tagline": "Gestão de Ações & Renda",
+    "loading": "Carregando plataforma..."
+  },
+  "nav": {
+    "overview": "Visão geral",
+    "transactions": "Lançamentos",
+    "positions": "Carteira",
+    "rebalance": "Rebalancear",
+    "dividends": "Dividendos",
+    "diagnosis": "Diagnóstico",
+    "simulator": "Simulador",
+    "profile": "Perfil",
+    "settings": "Configurações",
+    "sections": {
+      "analysis": "Análise",
+      "account": "Conta"
+    },
+    "support_whatsapp": "Suporte WhatsApp",
+    "collapse_sidebar": "Recolher menu lateral",
+    "expand_sidebar": "Expandir menu lateral"
+  },
+  "header": {
+    "launch_button": "Lançar",
+    "launch_tooltip": "Lançar nova compra, venda ou provento",
+    "notifications_tooltip": "Alertas & Notificações FCM",
+    "profile": "Meu Perfil",
+    "demo_badge": "Demo",
+    "demo_tooltip": "Modo Degustação ativo - Salvar com Google",
+    "enter": "Entrar"
+  },
+  "demo": {
+    "title": "Modo Demonstração Ativo",
+    "message": "Você tentou <1>{{action}}</1>. No modo demonstração, as alterações estão desativadas para que você possa apenas analisar como a carteira se comporta.",
+    "not_now": "Agora não",
+    "create_account": "Criar Conta"
+  },
+  "auth": {
+    "title": "Acessar sua conta",
+    "subtitle": "Entre com sua conta Google para sincronizar e proteger seus investimentos em tempo real na nuvem.",
+    "google_button": "Entrar com Google",
+    "google_loading": "Conectando...",
+    "demo_title": "Modo Demonstração",
+    "demo_subtitle": "Explorar carteira de demonstração com dados simulados. Sem necessidade de cadastro.",
+    "demo_button": "Explorar em Modo Demo",
+    "demo_loading": "Carregando demo...",
+    "features": {
+      "security": "Segurança com criptografia de ponta",
+      "privacy": "Privacidade absoluta de dados financeiros",
+      "sync": "Sincronização instantânea entre dispositivos"
+    },
+    "errors": {
+      "popup_closed": "A autenticação foi cancelada. Tente novamente.",
+      "network": "Falha de conexão. Verifique sua internet.",
+      "popup_blocked": "O navegador bloqueou o popup. Permita popups para continuar.",
+      "default": "Não foi possível autenticar. Tente novamente."
+    }
+  },
+  "settings_view": {
+    "backup_json_title": "Backup JSON",
+    "backup_json_desc": "Baixe um arquivo JSON com todas as suas transações e posições para backup seguro.",
+    "backup_json_btn": "Exportar Backup JSON",
+    "csv_title": "Relatório em CSV",
+    "csv_desc": "Exporte seu histórico completo de lançamentos para planilhas (Excel / Google Sheets).",
+    "csv_btn": "Exportar Lançamentos CSV",
+    "notifications_title": "Notificações & Alertas",
+    "notifications_desc": "Configure alertas de dividendos e relatórios via Firebase Cloud Messaging.",
+    "notifications_btn": "Configurar Alertas FCM",
+    "market_title": "Cotações de Mercado & Sincronização",
+    "market_desc": "Atualize preços de ações e FIIs em tempo real via Brapi API.",
+    "market_btn": "Atualizar Cotações Agora",
+    "theme_title": "Preferências de Exibição",
+    "theme_desc": "Alterne entre os modos claro e escuro para melhor conforto visual.",
+    "success_json": "Backup JSON exportado com sucesso!",
+    "success_csv": "Lançamentos CSV exportados com sucesso!",
+    "error_no_transactions": "Nenhuma transação registrada para exportar."
+  },
+  "profile_view": {
+    "member_badge": "Membro Dyeldi",
+    "connected": "Conectado com segurança",
+    "demo_mode": "Modo Degustação",
+    "guest_investor": "Investidor Convidado",
+    "default_investor": "Investidor",
+    "guest_email": "demo@example.com",
+    "unauthenticated": "Não autenticado",
+    "stats": "Estatísticas da Conta",
+    "total_assets": "Total em Ativos",
+    "positions_count": "Ativos na Carteira",
+    "transactions_count": "Lançamentos Registrados",
+    "plan_title": "Plano & Assinatura",
+    "plan_name": "Dyeldi Pro",
+    "plan_desc": "Recursos avançados ilimitados",
+    "upgrade_btn": "Mudar para o Plano Pro",
+    "logout_btn": "Sair da conta",
+    "login_google_btn": "Entrar com Google"
+  },
+  "titles": {
+    "overview": {
+      "title": "Visão Geral",
+      "subtitle": "Resumo e indicadores da sua carteira"
+    },
+    "positions": {
+      "title": "Carteira",
+      "subtitle": "Custódia, preço médio, valuation e retorno total"
+    },
+    "rebalance": {
+      "title": "Rebalanceamento",
+      "subtitle": "Calculadora inteligente de aportes ótimos"
+    },
+    "dividends": {
+      "title": "Dividendos",
+      "subtitle": "Renda passiva, proventos e efeito bola de neve"
+    },
+    "transactions": {
+      "title": "Lançamentos",
+      "subtitle": "Histórico auditável de ordens e lançamentos"
+    },
+    "diagnosis": {
+      "title": "Diagnóstico",
+      "subtitle": "Score de risco e saúde patrimonial"
+    },
+    "simulator": {
+      "title": "Simulador",
+      "subtitle": "Projeções de juros compostos vs CDI e IPCA"
+    },
+    "profile": {
+      "title": "Meu Perfil",
+      "subtitle": "Informações da conta e plano Dyeldi"
+    },
+    "settings": {
+      "title": "Configurações",
+      "subtitle": "Preferências, alertas e exportação de relatórios"
+    }
+  },
+  "common": {
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "close": "Fechar",
+    "loading": "Carregando...",
+    "error": "Erro",
+    "success": "Sucesso",
+    "search": "Pesquisar..."
+  }
+}

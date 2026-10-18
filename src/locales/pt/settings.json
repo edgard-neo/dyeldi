@@ -1,0 +1,19 @@
+{
+  "title": "Configurações da Plataforma",
+  "subtitle": "Personalize a aparência, gerencie alertas e exporte relatórios dos seus investimentos.",
+  "theme_title": "Tema da Interface",
+  "theme_desc": "Alterne entre os modos claro e escuro para melhor conforto visual.",
+  "notifications_title": "Alertas de Preço Teto & Proventos",
+  "notifications_desc": "Receba avisos instantâneos quando um ativo atingir margem de segurança segundo a fórmula de Bazin ou pagar dividendos.",
+  "notifications_badge": "Notificações no Navegador",
+  "notifications_btn": "Configurar Alertas",
+  "data_title": "Baixar dados da carteira",
+  "data_desc": "Exporte o histórico de compras e posições em planilha para guardar ou abrir no Excel.",
+  "csv_btn": "Exportar planilha (CSV)",
+  "json_btn": "Exportar arquivo de segurança (JSON)",
+  "refresh_quotes_btn": "Recarregar Cotações B3",
+  "refreshing_quotes": "Atualizando...",
+  "success_json": "Cópia de segurança baixada com sucesso!",
+  "success_csv": "Relatório de lançamentos exportado com sucesso!",
+  "error_no_transactions": "Você ainda não possui lançamentos registrados para exportar."
+}

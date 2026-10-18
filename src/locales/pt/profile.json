@@ -1,0 +1,21 @@
+{
+  "member_badge": "Investidor Dyeldi",
+  "connected": "Conectado com segurança",
+  "demo_mode": "Modo Demonstração",
+  "guest_investor": "Investidor Convidado",
+  "default_investor": "Investidor",
+  "guest_email": "demo@example.com",
+  "unauthenticated": "Não conectado",
+  "stats": "Resumo da Conta",
+  "total_assets": "Patrimônio Total",
+  "positions_count": "Ativos na Carteira",
+  "transactions_count": "Lançamentos Registrados",
+  "positions_unit": "ativos",
+  "transactions_unit": "lançamentos",
+  "save_google_btn": "Salvar com Google",
+  "logout_btn": "Sair da conta",
+  "support_badge": "Apoie o Projeto Dyeldi",
+  "support_title": "Gosta do Dyeldi? Apoie o desenvolvimento independente!",
+  "support_desc": "O Dyeldi é mantido sem mensalidades fixas nem anúncios. Se a plataforma agrega valor aos seus investimentos na B3, considere fazer uma contribuição voluntária de qualquer valor via Pix.",
+  "support_btn": "Apoiar com Pix"
+}

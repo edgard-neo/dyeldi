@@ -1,0 +1,232 @@
+{
+  "entities": {
+    "DividendosCacheItem": {
+      "path": "dividendos_cache/{ticker}",
+      "schema": {
+        "ticker": { "type": "string" },
+        "dy": { "type": "number" },
+        "atualizadoEm": { "type": "string" }
+      }
+    },
+    "SyncMeta": {
+      "path": "sync_meta/{docId}",
+      "schema": {
+        "lastSyncDate": { "type": "string" },
+        "lastSyncTimestamp": { "type": "string" },
+        "requestCount": { "type": "number" },
+        "updatedCount": { "type": "number" }
+      }
+    },
+    "UserPosition": {
+      "path": "users/{userId}/positions/{positionId}",
+      "schema": {
+        "ticker": { "type": "string" },
+        "quantity": { "type": "number" },
+        "averagePrice": { "type": "number" },
+        "targetPercent": { "type": "number" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "UserTransaction": {
+      "path": "users/{userId}/transactions/{transactionId}",
+      "schema": {
+        "ticker": { "type": "string" },
+        "type": { "type": "string", "enum": ["COMPRA", "VENDA", "PROVENTO"] },
+        "date": { "type": "string" },
+        "quantity": { "type": "number" },
+        "price": { "type": "number" },
+        "fees": { "type": "number" },
+        "total": { "type": "number" },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "UserNotificationSettings": {
+      "path": "users/{userId}/settings/{settingId}",
+      "schema": {
+        "pushEnabled": { "type": "boolean" },
+        "emailEnabled": { "type": "boolean" },
+        "emailAddress": { "type": "string" },
+        "alertOnBuyTrigger": { "type": "boolean" },
+        "alertOnSellTrigger": { "type": "boolean" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "UserAlertHistory": {
+      "path": "users/{userId}/alerts_history/{alertId}",
+      "schema": {
+        "userId": { "type": "string" },
+        "ticker": { "type": "string" },
+        "action": { "type": "string" },
+        "title": { "type": "string" },
+        "body": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "channelSent": { "type": "string" },
+        "read": { "type": "boolean" }
+      }
+    },
+    "UserDoc": {
+      "path": "users/{userId}",
+      "schema": {
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "preferredLayout": { "type": "string", "enum": ["CARDS", "TABLE"] },
+        "investorProfile": { "type": "string", "enum": ["ALL", "STOCKS", "FIIS", "CRYPTO"] },
+        "bazinHurdleRate": { "type": "number" },
+        "classAllocations": {
+          "type": "object",
+          "properties": {
+            "stocks": { "type": "number" },
+            "fiis": { "type": "number" },
+            "crypto": { "type": "number" }
+          }
+        }
+      }
+    },
+    "UserSimulationInputs": {
+      "path": "users/{userId}/settings/{settingId}",
+      "schema": {
+        "ticker": { "type": "string" },
+        "initialInvestment": { "type": "number" },
+        "monthlyContribution": { "type": "number" },
+        "expectedAppreciation": { "type": "number" },
+        "dividendYield": { "type": "number" },
+        "reinvestDividends": { "type": "boolean" },
+        "years": { "type": "number" },
+        "ipcaAnnual": { "type": "number" },
+        "cdiAnnual": { "type": "number" },
+        "adjustContributionForInflation": { "type": "boolean" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "AtivosInfo": {
+      "path": "ativosInfo/{ticker}",
+      "schema": {
+        "ticker": { "type": "string" },
+        "cnpj": { "type": "string" },
+        "pVP": { "type": "number" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "PortfolioMeta": {
+      "path": "users/{userId}/portfolioMeta/{ticker}",
+      "schema": {
+        "ticker": { "type": "string" },
+        "brokerage": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "CotacoesCacheItem": {
+      "path": "cotacoes_cache/{ticker}",
+      "schema": {
+        "ticker": { "type": "string" },
+        "price": { "type": "number" },
+        "dayHigh": { "type": "number" },
+        "dayLow": { "type": "number" },
+        "atualizadoEm": { "type": "string" },
+        "name": { "type": "string" },
+        "changePercent": { "type": "number" },
+        "avgAppreciation": { "type": "number" },
+        "pVP": { "type": "number" },
+        "cnpj": { "type": "string" }
+      }
+    },
+    "BrapiDailyCall": {
+      "path": "brapi_daily_calls/{date}",
+      "schema": {
+        "date": { "type": "string" },
+        "count": { "type": "number" },
+        "lastCallAt": { "type": "string" }
+      }
+    },
+    "BolsaiDailyCall": {
+      "path": "bolsai_daily_calls/{date}",
+      "schema": {
+        "date": { "type": "string" },
+        "count": { "type": "number" },
+        "lastCallAt": { "type": "string" }
+      }
+    },
+    "AnaliseCarteiraCache": {
+      "path": "analise_carteira_cache/{docId}",
+      "schema": {
+        "analysis": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "userId": { "type": "string" }
+      }
+    },
+    "TechnicalIndicatorsCacheItem": {
+      "path": "technical_indicators_cache/{ticker}",
+      "schema": {
+        "ticker": { "type": "string" },
+        "sma200": { "type": "number" },
+        "currentPrice": { "type": "number" },
+        "smaDistancePercent": { "type": "number" },
+        "daysCount": { "type": "number" },
+        "realizedPrice": { "type": "number" },
+        "mvrv": { "type": "number" },
+        "updatedAt": { "type": "string" },
+        "type": { "type": "string" }
+      }
+    },
+    "HistoricoCacheItem": {
+      "path": "historico_cache/{cacheKey}",
+      "schema": {
+        "ticker": { "type": "string" },
+        "timeframe": { "type": "string" },
+        "history": { "type": "array" },
+        "updatedAt": { "type": "string" },
+        "isFallback": { "type": "boolean" }
+      }
+    }
+  },
+  "firestore": {
+    "historico_cache/{cacheKey}": {
+      "schema": "HistoricoCacheItem",
+      "description": "Cache global de séries históricas de preços e SMA 200 de ações, FIIs e criptoativos"
+    },
+    "dividendos_cache/{ticker}": {
+      "schema": "DividendosCacheItem",
+      "description": "Cache de Dividend Yield diário consultado na Bolsai API"
+    },
+    "technical_indicators_cache/{ticker}": {
+      "schema": "TechnicalIndicatorsCacheItem",
+      "description": "Cache compartilhado de indicadores técnicos como SMA 200 e MVRV (validade 24h)"
+    },
+    "sync_meta/{docId}": {
+      "schema": "SyncMeta",
+      "description": "Controle de idempotência das rotinas de sincronização em segundo plano"
+    },
+    "ativosInfo/{ticker}": {
+      "schema": "AtivosInfo",
+      "description": "Cache compartilhado de informações de ativos (CNPJ e P/VP)"
+    },
+    "users/{userId}/portfolioMeta/{ticker}": {
+      "schema": "PortfolioMeta",
+      "description": "Metadados de portfolio do usuário por ativo (ex: corretora)"
+    },
+    "cotacoes_cache/{ticker}": {
+      "schema": "CotacoesCacheItem",
+      "description": "Cache compartilhado de cotações de ativos em tempo real (limite de 30 minutos)"
+    },
+    "brapi_daily_calls/{date}": {
+      "schema": "BrapiDailyCall",
+      "description": "Registro de contagem diária de chamadas feitas à API Brapi"
+    },
+    "bolsai_daily_calls/{date}": {
+      "schema": "BolsaiDailyCall",
+      "description": "Registro de contagem diária de chamadas feitas à API BolsaAI"
+    },
+    "users/{userId}": {
+      "schema": "UserDoc",
+      "description": "Perfil e preferências de investimentos do usuário"
+    },
+    "analise_carteira_cache/{docId}": {
+      "schema": "AnaliseCarteiraCache",
+      "description": "Cache de análises estratégicas da carteira"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="pwa_emerald_512" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="60%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="pwa_indigo_512" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3730a3" />
+      <stop offset="50%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <radialGradient id="pwa_glow_512" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="#09090b" />
+  <rect x="4" y="4" width="504" height="504" rx="108" stroke="#27272a" stroke-width="4" />
+
+  <!-- Brilho Ambiente Central -->
+  <circle cx="256" cy="256" r="200" fill="url(#pwa_glow_512)" />
+
+  <!-- Monograma Dyeldi (Transform 32px para 512px) -->
+  <g transform="translate(74, 74) scale(11.375)">
+    <!-- Pilar Esquerdo da Letra D -->
+    <rect x="6.5" y="6" width="4.5" height="20" rx="2.25" fill="url(#pwa_indigo_512)" />
+
+    <!-- Topo da Letra D -->
+    <path
+      d="M9 6H17C21.42 6 25 9.58 25 14C25 15.3 24.69 16.53 24.13 17.62L20.45 15.35C20.8 14.94 21 14.49 21 14C21 11.79 19.21 10 17 10H9V6Z"
+      fill="url(#pwa_indigo_512)"
+    />
+
+    <!-- Base da Letra D -->
+    <path
+      d="M9 22H16.5C18.99 22 21 20 21 17.5C21 16.9 20.88 16.33 20.66 15.81L24.36 13.54C24.77 14.74 25 16.05 25 17.5C25 22.19 21.19 26 16.5 26H9V22Z"
+      fill="url(#pwa_emerald_512)"
+    />
+
+    <!-- Vetor Dinâmico de Yield -->
+    <path
+      d="M13.5 17.5L19.2 9.2C19.5 8.7 20.1 8.5 20.6 8.5H23.8C24.6 8.5 25.1 9.3 24.8 10.1L23.2 13.8C22.9 14.5 22.2 15 21.4 15H17.8L13.5 17.5Z"
+      fill="url(#pwa_emerald_512)"
+    />
+
+    <!-- Seta de Crescimento -->
+    <polygon points="19.5,5.5 25.5,5.5 25.5,11.5" fill="#34d399" />
+  </g>
+</svg>

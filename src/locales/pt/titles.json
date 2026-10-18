@@ -1,0 +1,38 @@
+{
+  "overview": {
+    "title": "Visão Geral",
+    "subtitle": "Resumo e indicadores da sua carteira"
+  },
+  "positions": {
+    "title": "Carteira",
+    "subtitle": "Acompanhe a quantidade, preço médio e rentabilidade dos seus ativos"
+  },
+  "rebalance": {
+    "title": "Rebalanceamento",
+    "subtitle": "Descubra onde investir seu próximo dinheiro para equilibrar a carteira"
+  },
+  "dividends": {
+    "title": "Dividendos",
+    "subtitle": "Acompanhe seus rendimentos e o crescimento dos proventos ao longo do tempo"
+  },
+  "transactions": {
+    "title": "Lançamentos",
+    "subtitle": "Histórico completo de compras, vendas e rendimentos recebidos"
+  },
+  "diagnosis": {
+    "title": "Diagnóstico",
+    "subtitle": "Avaliação da segurança, diversificação e equilíbrio da sua carteira"
+  },
+  "simulator": {
+    "title": "Simulador",
+    "subtitle": "Simule o poder dos juros compostos e compare seus ganhos com a inflação"
+  },
+  "profile": {
+    "title": "Meu Perfil",
+    "subtitle": "Informações da sua conta e plano de acesso"
+  },
+  "settings": {
+    "title": "Configurações",
+    "subtitle": "Preferências de exibição, avisos e cópias de segurança"
+  }
+}

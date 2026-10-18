@@ -1,0 +1,21 @@
+{
+  "notifications": {
+    "title": "Alertas & Notificações",
+    "subtitle": "Receba avisos de dividendos e oportunidades de aporte",
+    "tip": "Configure abaixo os alertas de preço e preferências de aviso no seu navegador.",
+    "opportunities_identified": "{{count}} Oportunidades Identificadas",
+    "live_badge": "Ao Vivo",
+    "fcm_status_active": "Notificações Ativas",
+    "fcm_status_inactive": "Notificações Desativadas",
+    "enable_btn": "Ativar Notificações no Navegador",
+    "test_btn": "Testar Notificação Agora",
+    "threshold_label": "Margem Mínima de Segurança (Bazin):",
+    "close_btn": "Fechar"
+  },
+  "delete_transaction": {
+    "title": "Excluir este lançamento?",
+    "desc": "Seu preço médio e posições serão recalculados automaticamente.",
+    "confirm_btn": "Sim, excluir lançamento",
+    "cancel_btn": "Cancelar"
+  }
+}

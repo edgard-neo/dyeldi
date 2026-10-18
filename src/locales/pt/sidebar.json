@@ -1,0 +1,18 @@
+{
+  "overview": "Visão geral",
+  "transactions": "Lançamentos",
+  "positions": "Carteira",
+  "rebalance": "Rebalancear",
+  "dividends": "Dividendos",
+  "diagnosis": "Diagnóstico",
+  "simulator": "Simulador",
+  "profile": "Perfil",
+  "settings": "Configurações",
+  "sections": {
+    "analysis": "Análise",
+    "account": "Conta"
+  },
+  "support_whatsapp": "Suporte WhatsApp",
+  "collapse_sidebar": "Recolher menu lateral",
+  "expand_sidebar": "Expandir menu lateral"
+}

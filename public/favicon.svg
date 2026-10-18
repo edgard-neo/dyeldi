@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <!-- Gradiente Esmeralda (Crescimento, Yield & Proventos) -->
+    <linearGradient id="dyeldi_emerald" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="60%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <!-- Gradiente Índigo (Solidez, Estratégia & Patrimônio) -->
+    <linearGradient id="dyeldi_indigo" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3730a3" />
+      <stop offset="50%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container Base Dark com Borda Refinada -->
+  <rect width="32" height="32" rx="8" fill="#09090b" stroke="#27272a" stroke-width="1" />
+
+  <!-- Monograma D - Dyeldi (Solidez + Dinâmica de Yield) -->
+  <!-- Pilar Esquerdo da Letra D (Estrutura / Base Patrimonial) -->
+  <rect x="6.5" y="6" width="4.5" height="20" rx="2.25" fill="url(#dyeldi_indigo)" />
+
+  <!-- Arco Superior e Inferior da Letra D com Arco Ascendente de Proventos (Yield Vector) -->
+  <!-- Topo da Letra D conectando ao topo -->
+  <path
+    d="M9 6H17C21.42 6 25 9.58 25 14C25 15.3 24.69 16.53 24.13 17.62L20.45 15.35C20.8 14.94 21 14.49 21 14C21 11.79 19.21 10 17 10H9V6Z"
+    fill="url(#dyeldi_indigo)"
+  />
+
+  <!-- Base da Letra D conectando à Curva de Crescimento -->
+  <path
+    d="M9 22H16.5C18.99 22 21 20 21 17.5C21 16.9 20.88 16.33 20.66 15.81L24.36 13.54C24.77 14.74 25 16.05 25 17.5C25 22.19 21.19 26 16.5 26H9V22Z"
+    fill="url(#dyeldi_emerald)"
+  />
+
+  <!-- Vetor Dinâmico Central de Aporte & Yield (Seta de Ascensão Integrada no Coração do D) -->
+  <path
+    d="M13.5 17.5L19.2 9.2C19.5 8.7 20.1 8.5 20.6 8.5H23.8C24.6 8.5 25.1 9.3 24.8 10.1L23.2 13.8C22.9 14.5 22.2 15 21.4 15H17.8L13.5 17.5Z"
+    fill="url(#dyeldi_emerald)"
+  />
+
+  <!-- Seta Sólida de Alta Precisão no Ápice (Nitidez em 16px/32px) -->
+  <polygon points="19.5,5.5 25.5,5.5 25.5,11.5" fill="#34d399" />
+</svg>
